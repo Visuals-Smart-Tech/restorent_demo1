@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 20% 8%;
+    --foreground: 40 10% 95%;
+
+    --card: 220 18% 12%;
+    --card-foreground: 40 10% 95%;
+
+    --popover: 220 18% 12%;
+    --popover-foreground: 40 10% 95%;
+
+    --primary: 38 92% 50%;
+    --primary-foreground: 220 20% 8%;
+
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 40 10% 95%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 40 8% 65%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 220 20% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 40 10% 95%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 38 92% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 18% 12%;
+    --sidebar-foreground: 40 10% 95%;
+    --sidebar-primary: 38 92% 50%;
+    --sidebar-primary-foreground: 220 20% 8%;
+    --sidebar-accent: 220 15% 20%;
+    --sidebar-accent-foreground: 40 10% 95%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 38 92% 50%;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 40 10% 95%;
+
+    --card: 220 18% 12%;
+    --card-foreground: 40 10% 95%;
+
+    --popover: 220 18% 12%;
+    --popover-foreground: 40 10% 95%;
+
+    --primary: 38 92% 50%;
+    --primary-foreground: 220 20% 8%;
+
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 40 10% 95%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 40 8% 65%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 220 20% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 40 10% 95%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 38 92% 50%;
+    --sidebar-background: 220 18% 12%;
+    --sidebar-foreground: 40 10% 95%;
+    --sidebar-primary: 38 92% 50%;
+    --sidebar-primary-foreground: 220 20% 8%;
+    --sidebar-accent: 220 15% 20%;
+    --sidebar-accent-foreground: 40 10% 95%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 38 92% 50%;
+  }
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
